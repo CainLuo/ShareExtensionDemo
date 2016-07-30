@@ -44,11 +44,11 @@ static NSString *uploadURL = @"http://requestb.in/1hx20w61";
     // This is called after the user selects Post. Do the upload of contentText and/or NSExtensionContext attachments.
     
     // Inform the host that we're done, so it un-blocks its UI. Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
-    NSString *configName = @"com.demoProject.ShareExtensionDemo.ShareExtension.BackgroundSessionConfig";
+    NSString *configName = @"com.wx1wx.MiLinkDevelopment.BackgroundSessionConfig";
     
     NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:configName];
     
-    sessionConfig.sharedContainerIdentifier = @"group.ShareExtensionGroup";
+    sessionConfig.sharedContainerIdentifier = @"group.MiLink";
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfig];
     
@@ -71,7 +71,7 @@ static NSString *uploadURL = @"http://requestb.in/1hx20w61";
  */
 - (NSURLRequest *)urlRequestWithImage:(UIImage *)image text:(NSString *)text {
     
-    NSURL *url = [NSURL fileURLWithPath:uploadURL];
+    NSURL *url = [NSURL URLWithString:uploadURL];
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
