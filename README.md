@@ -1,4 +1,4 @@
-#<p align=“center”>玩转iOS开发：iOS 8 新特性《Share Extension》</p>
+# <p align="center">玩转iOS开发：iOS 8 新特性《Share Extension》</p>
 
 - [作者感言](#作者感言)
 - [简介](#简介)
