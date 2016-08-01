@@ -57,6 +57,7 @@
 > 现在新工程和**`Share Extension`**已经创建完成, 现在我们可以在主应用当中调起**`Share Extension`**来看看效果, 这里我为了方便, 所以使用的是**`StoryBoard`**.
 
 > 拖一个**`UIButton`**到**`StoryBoard`**, 改名为**`Share`**, 然后关联**`Action`**事件到**`ViewController`**, 添加对应的代码.
+
 ![7 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/7.png)
 
 ![8 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/8.png)
