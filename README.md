@@ -1,4 +1,4 @@
-#<center>玩转iOS开发：iOS 8 新特性《Share Extension》</center>
+#<p align=“center”>玩转iOS开发：iOS 8 新特性《Share Extension》</p>
 
 - [作者感言](#作者感言)
 - [简介](#简介)
@@ -30,40 +30,40 @@
 ### 简介
 > 什么是**`Share Extension`**? 在iOS 8的时候, 苹果开放了几个新特性, 其中一个就是**`Share Extension`**, 大家可以打开苹果自己自带的浏览器**`Safari`**, 随便选中一个网站, 点击分享, 就会出现一个分享界面, 中间的那条**`iCon`**栏目就是系统自带的**`Share Extension`**(如图所示), 说白了就是把**`Safari`**的网站地址分享出去罢了, 所以说**`Share Extension`**其实就是系统自带的社会化SDK罢了, 说那么多道理, 还不如直接上代码~
 
-![1 | center | 480x0](./1.jpg)
+![1 | center | 480x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/1.jpg)
 
 ---
 ###创建新工程
 
 > 首先我们需要先创建一个新的工程, 由于**`Share Extension`**不是一个独立的应用, 它是需要依赖于主程序, 创建新工程的顺序我就省略了, 这里的新工程叫做**`ShareExtensionDemo`**.
 
-![2 | center | 1080x0](./2.png)
+![2 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/2.png)
 
 
 ---
 ### 创建Share Extension
 >  创建完新工程之后, 我们现在来创建**`Share Extension`**和**`Today Extension`**一样, 系统是有自带的模板给我们自己选择
 
-![3 | center | 1080x0](./3.png)
+![3 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/3.png)
 
-![4 | center | 1080x0](./4.png)
+![4 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/4.png)
 
-![5 | center | 1080x0](./5.png)
+![5 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/5.png)
 
-![6 | center | 1080x0](./6.png)
+![6 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/6.png)
 
 ---
 ### 配置主应用
 > 现在新工程和**`Share Extension`**已经创建完成, 现在我们可以在主应用当中调起**`Share Extension`**来看看效果, 这里我为了方便, 所以使用的是**`StoryBoard`**.
 
 > 拖一个**`UIButton`**到**`StoryBoard`**, 改名为**`Share`**, 然后关联**`Action`**事件到**`ViewController`**, 添加对应的代码.
-![7 | center | 1080x0](./7.png)
+![7 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/7.png)
 
-![8 | center | 1080x0](./8.png)
+![8 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/8.png)
 
-![9 | center | 1080x0](./9.png)
+![9 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/9.png)
 
-![10 | center | 1080x0](./10.png)
+![10 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/10.png)
 
 
 ```objectivec
@@ -82,11 +82,11 @@
 
 > 现在让我们来看看对应的效果吧~~
 
-![11 | center | 480x0](./11.png)
+![11 | center | 480x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/11.png)
 
-![12 | center | 480x0](./12.png)
+![12 | center | 480x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/12.png)
 
-![13 | center | 480x0](./13.png)
+![13 | center | 480x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/13.png)
 
 > 现在我们看到了**`Share Extension`**展示出来的效果, 但酱紫还是不够的, 继续继续~
 
@@ -95,7 +95,7 @@
 
 > 在配置**`Share Extension`**之前, 我们需要看看里面的几个方法, 不然我们完全都是蒙圈的
 
-![14 | center | 1080x0](./14.png)
+![14 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/14.png)
 
 ```objectivec
 // 如果是return No, 那么发送按钮就无法点击, 如果return YES, 那么发送按钮就可以点击
@@ -140,7 +140,7 @@
 
 > 其实这个表格在**[官网文档](https://developer.apple.com/library/ios/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html)**都是可以找到的~~
 
-![15 | center | 1080x0](./15.png)
+![15 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/15.png)
 
 ---
 # <center>Share Extension逻辑</center>
@@ -178,12 +178,12 @@ static NSString *uploadURL = @"http://requestb.in/1hx20w61";
 > 在写逻辑之前, 我们需要打开App的一个Group功能, 并且填写对应的参数, 不然没法传送数据.
 
 
-![16 | center | 1080x0](./16.png)
-![17 | center | 1080x0](./17.png)
+![16 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/16.png)
+![17 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/17.png)
 
 > 同样的, **`Share Extension`**也需要同样的操作, 这里就不做重复的操作了, 现在我们继续来填写对应的网络操作逻辑
 
-![18 | center | 1080x0](./18.png)
+![18 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/18.png)
 
 > 首先, 我们需要封装一个返回**`NSURLRequest`**的方法
 
@@ -250,9 +250,9 @@ static NSString *uploadURL = @"http://requestb.in/1hx20w61";
 
 > 这样子就完事了, 由于我这里不知道为啥用模拟器一直没法进行网络请求, 只能用真机测试了, 不知道是不是我配置的问题, 如果有知道的大神麻烦请告知一声, 谢谢啦~~现在我们再来重复一下刚开始的操作, 发送请求到指定的**`URL`**里去.
 
-![19 | center | 480x0](./19.png)
+![19 | center | 480x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/19.png)
 
-![20 | center | 1080x0](./20.png)
+![20 | center | 1080x0](https://github.com/CainRun/ShareExtensionDemo/blob/master/images-folder/20.png)
 
 > 酱紫我们就搞定了**`Share Extension`**, 灰常的简单
 
