@@ -227,6 +227,7 @@ static NSString *uploadURL = @"http://requestb.in/1hx20w61";
 }
 ```
 > 然后在**`- (void)didSelectPost `**点击事件中去调用
+
 ```objectivec
 - (void)didSelectPost {
 
@@ -260,7 +261,6 @@ static NSString *uploadURL = @"http://requestb.in/1hx20w61";
 ### 自定义UI
 
 > 这里补充一点, 其实**`Share Extension`**说白了就是一个**`UIViewController`**, 所以你可以根据你的喜好来进行UI定制, 详细资料大家可以去苹果官网或者**`Google`**搜搜, 百度的话, 你们懂得
-
 
 ---
 ### 补充篇文章
